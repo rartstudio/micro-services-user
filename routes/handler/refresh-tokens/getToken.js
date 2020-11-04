@@ -6,7 +6,7 @@ module.exports = async (req,res) => {
         where: {token: refreshToken}
     })
 
-    //check token if exist
+    //check token if doesnt exist
     if(!token){
         return res.status(400).json({
             status: 'error',
